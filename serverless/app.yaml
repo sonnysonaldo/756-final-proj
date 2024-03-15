@@ -1,0 +1,4 @@
+runtime: python38
+resources:
+    memory_gb: 16
+    disk_size_gb: 15
