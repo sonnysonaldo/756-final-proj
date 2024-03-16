@@ -1,0 +1,416 @@
+2024-03-15T17:55:09,573 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=12893
+2024-03-15T17:55:09,573 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-03-15T17:55:09,573 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Successfully loaded /home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2024-03-15T17:55:09,573 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - [PID]12893
+2024-03-15T17:55:09,574 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch worker started.
+2024-03-15T17:55:09,574 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Python runtime: 3.8.10
+2024-03-15T17:55:09,581 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-03-15T17:55:09,600 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - model_name: keypoint_rcnn, batchSize: 1
+2024-03-15T17:55:10,736 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Enabled tensor cores
+2024-03-15T17:55:10,737 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-03-15T17:55:10,737 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-03-15T17:55:11,265 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-03-15T17:55:11,265 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-03-15T17:55:11,265 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-03-15T17:55:11,265 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-03-15T17:55:11,265 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-03-15T17:55:11,265 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-03-15T17:55:11,265 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-03-15T17:55:11,266 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-03-15T17:55:11,266 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-03-15T17:55:11,266 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-03-15T17:55:11,266 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_loader.py", line 143, in load
+2024-03-15T17:55:11,266 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-03-15T17:55:11,266 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/vision_handler.py", line 25, in initialize
+2024-03-15T17:55:11,266 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super().initialize(context)
+2024-03-15T17:55:11,266 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 170, in initialize
+2024-03-15T17:55:11,266 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.model = self._load_pickled_model(
+2024-03-15T17:55:11,266 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 311, in _load_pickled_model
+2024-03-15T17:55:11,267 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     model = model_class()
+2024-03-15T17:55:11,267 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/tmp/models/edd7f3e2a1bd48608d8aef845c32ddda/model.py", line 12, in __init__
+2024-03-15T17:55:11,267 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super(Net, self).__init__()
+2024-03-15T17:55:11,267 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - TypeError: __init__() missing 1 required positional argument: 'backbone'
+2024-03-15T17:55:13,053 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=12949
+2024-03-15T17:55:13,054 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-03-15T17:55:13,059 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Successfully loaded /home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2024-03-15T17:55:13,059 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - [PID]12949
+2024-03-15T17:55:13,059 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch worker started.
+2024-03-15T17:55:13,059 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Python runtime: 3.8.10
+2024-03-15T17:55:13,061 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-03-15T17:55:13,069 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - model_name: keypoint_rcnn, batchSize: 1
+2024-03-15T17:55:14,218 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Enabled tensor cores
+2024-03-15T17:55:14,218 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-03-15T17:55:14,218 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-03-15T17:55:14,724 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-03-15T17:55:14,724 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-03-15T17:55:14,724 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-03-15T17:55:14,725 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-03-15T17:55:14,725 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-03-15T17:55:14,725 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-03-15T17:55:14,725 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-03-15T17:55:14,725 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-03-15T17:55:14,725 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-03-15T17:55:14,725 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-03-15T17:55:14,725 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_loader.py", line 143, in load
+2024-03-15T17:55:14,725 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-03-15T17:55:14,725 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/vision_handler.py", line 25, in initialize
+2024-03-15T17:55:14,725 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super().initialize(context)
+2024-03-15T17:55:14,725 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 170, in initialize
+2024-03-15T17:55:14,725 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.model = self._load_pickled_model(
+2024-03-15T17:55:14,725 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 311, in _load_pickled_model
+2024-03-15T17:55:14,726 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     model = model_class()
+2024-03-15T17:55:14,726 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/tmp/models/edd7f3e2a1bd48608d8aef845c32ddda/model.py", line 12, in __init__
+2024-03-15T17:55:14,726 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super(Net, self).__init__()
+2024-03-15T17:55:14,726 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - TypeError: __init__() missing 1 required positional argument: 'backbone'
+2024-03-15T17:55:16,501 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=12994
+2024-03-15T17:55:16,501 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-03-15T17:55:16,507 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Successfully loaded /home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2024-03-15T17:55:16,507 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - [PID]12994
+2024-03-15T17:55:16,507 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch worker started.
+2024-03-15T17:55:16,507 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Python runtime: 3.8.10
+2024-03-15T17:55:16,508 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-03-15T17:55:16,517 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - model_name: keypoint_rcnn, batchSize: 1
+2024-03-15T17:55:17,714 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Enabled tensor cores
+2024-03-15T17:55:17,714 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-03-15T17:55:17,714 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-03-15T17:55:18,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-03-15T17:55:18,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-03-15T17:55:18,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-03-15T17:55:18,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-03-15T17:55:18,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-03-15T17:55:18,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-03-15T17:55:18,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-03-15T17:55:18,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-03-15T17:55:18,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-03-15T17:55:18,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-03-15T17:55:18,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_loader.py", line 143, in load
+2024-03-15T17:55:18,243 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-03-15T17:55:18,243 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/vision_handler.py", line 25, in initialize
+2024-03-15T17:55:18,243 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super().initialize(context)
+2024-03-15T17:55:18,243 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 170, in initialize
+2024-03-15T17:55:18,243 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.model = self._load_pickled_model(
+2024-03-15T17:55:18,243 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 311, in _load_pickled_model
+2024-03-15T17:55:18,243 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     model = model_class()
+2024-03-15T17:55:18,243 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/tmp/models/edd7f3e2a1bd48608d8aef845c32ddda/model.py", line 12, in __init__
+2024-03-15T17:55:18,243 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super(Net, self).__init__()
+2024-03-15T17:55:18,243 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - TypeError: __init__() missing 1 required positional argument: 'backbone'
+2024-03-15T17:55:21,006 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=13044
+2024-03-15T17:55:21,006 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-03-15T17:55:21,012 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Successfully loaded /home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2024-03-15T17:55:21,012 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - [PID]13044
+2024-03-15T17:55:21,012 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch worker started.
+2024-03-15T17:55:21,012 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Python runtime: 3.8.10
+2024-03-15T17:55:21,015 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-03-15T17:55:21,023 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - model_name: keypoint_rcnn, batchSize: 1
+2024-03-15T17:55:22,171 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Enabled tensor cores
+2024-03-15T17:55:22,171 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-03-15T17:55:22,171 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-03-15T17:55:22,707 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-03-15T17:55:22,707 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-03-15T17:55:22,707 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-03-15T17:55:22,707 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-03-15T17:55:22,707 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-03-15T17:55:22,707 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-03-15T17:55:22,707 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-03-15T17:55:22,707 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-03-15T17:55:22,707 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-03-15T17:55:22,707 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-03-15T17:55:22,707 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_loader.py", line 143, in load
+2024-03-15T17:55:22,707 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-03-15T17:55:22,707 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/vision_handler.py", line 25, in initialize
+2024-03-15T17:55:22,708 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super().initialize(context)
+2024-03-15T17:55:22,708 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 170, in initialize
+2024-03-15T17:55:22,708 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.model = self._load_pickled_model(
+2024-03-15T17:55:22,708 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 311, in _load_pickled_model
+2024-03-15T17:55:22,708 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     model = model_class()
+2024-03-15T17:55:22,708 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/tmp/models/edd7f3e2a1bd48608d8aef845c32ddda/model.py", line 12, in __init__
+2024-03-15T17:55:22,708 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super(Net, self).__init__()
+2024-03-15T17:55:22,708 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - TypeError: __init__() missing 1 required positional argument: 'backbone'
+2024-03-15T17:55:26,492 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=13095
+2024-03-15T17:55:26,492 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-03-15T17:55:26,498 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Successfully loaded /home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2024-03-15T17:55:26,498 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - [PID]13095
+2024-03-15T17:55:26,498 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch worker started.
+2024-03-15T17:55:26,498 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Python runtime: 3.8.10
+2024-03-15T17:55:26,499 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-03-15T17:55:26,507 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - model_name: keypoint_rcnn, batchSize: 1
+2024-03-15T17:55:27,642 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Enabled tensor cores
+2024-03-15T17:55:27,642 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-03-15T17:55:27,642 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-03-15T17:55:28,150 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_loader.py", line 143, in load
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/vision_handler.py", line 25, in initialize
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super().initialize(context)
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 170, in initialize
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.model = self._load_pickled_model(
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 311, in _load_pickled_model
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     model = model_class()
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/tmp/models/edd7f3e2a1bd48608d8aef845c32ddda/model.py", line 12, in __init__
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super(Net, self).__init__()
+2024-03-15T17:55:28,151 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - TypeError: __init__() missing 1 required positional argument: 'backbone'
+2024-03-15T17:55:33,933 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=13193
+2024-03-15T17:55:33,933 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-03-15T17:55:33,939 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Successfully loaded /home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2024-03-15T17:55:33,939 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - [PID]13193
+2024-03-15T17:55:33,939 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch worker started.
+2024-03-15T17:55:33,939 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Python runtime: 3.8.10
+2024-03-15T17:55:33,941 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-03-15T17:55:33,949 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - model_name: keypoint_rcnn, batchSize: 1
+2024-03-15T17:55:35,189 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Enabled tensor cores
+2024-03-15T17:55:35,189 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-03-15T17:55:35,189 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-03-15T17:55:35,714 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-03-15T17:55:35,714 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-03-15T17:55:35,714 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-03-15T17:55:35,714 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-03-15T17:55:35,714 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-03-15T17:55:35,714 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-03-15T17:55:35,714 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-03-15T17:55:35,714 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-03-15T17:55:35,714 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-03-15T17:55:35,714 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-03-15T17:55:35,714 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_loader.py", line 143, in load
+2024-03-15T17:55:35,715 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-03-15T17:55:35,715 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/vision_handler.py", line 25, in initialize
+2024-03-15T17:55:35,715 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super().initialize(context)
+2024-03-15T17:55:35,715 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 170, in initialize
+2024-03-15T17:55:35,715 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.model = self._load_pickled_model(
+2024-03-15T17:55:35,715 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 311, in _load_pickled_model
+2024-03-15T17:55:35,715 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     model = model_class()
+2024-03-15T17:55:35,715 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/tmp/models/edd7f3e2a1bd48608d8aef845c32ddda/model.py", line 12, in __init__
+2024-03-15T17:55:35,715 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super(Net, self).__init__()
+2024-03-15T17:55:35,715 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - TypeError: __init__() missing 1 required positional argument: 'backbone'
+2024-03-15T17:55:44,495 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=13287
+2024-03-15T17:55:44,496 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-03-15T17:55:44,502 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Successfully loaded /home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2024-03-15T17:55:44,502 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - [PID]13287
+2024-03-15T17:55:44,502 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch worker started.
+2024-03-15T17:55:44,502 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Python runtime: 3.8.10
+2024-03-15T17:55:44,503 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-03-15T17:55:44,511 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - model_name: keypoint_rcnn, batchSize: 1
+2024-03-15T17:55:45,700 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Enabled tensor cores
+2024-03-15T17:55:45,700 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-03-15T17:55:45,700 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_loader.py", line 143, in load
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/vision_handler.py", line 25, in initialize
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super().initialize(context)
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 170, in initialize
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.model = self._load_pickled_model(
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 311, in _load_pickled_model
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     model = model_class()
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/tmp/models/edd7f3e2a1bd48608d8aef845c32ddda/model.py", line 12, in __init__
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super(Net, self).__init__()
+2024-03-15T17:55:46,242 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - TypeError: __init__() missing 1 required positional argument: 'backbone'
+2024-03-15T17:56:00,045 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=13356
+2024-03-15T17:56:00,045 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-03-15T17:56:00,051 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Successfully loaded /home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2024-03-15T17:56:00,051 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - [PID]13356
+2024-03-15T17:56:00,051 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch worker started.
+2024-03-15T17:56:00,051 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Python runtime: 3.8.10
+2024-03-15T17:56:00,053 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-03-15T17:56:00,061 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - model_name: keypoint_rcnn, batchSize: 1
+2024-03-15T17:56:01,175 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Enabled tensor cores
+2024-03-15T17:56:01,175 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-03-15T17:56:01,175 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-03-15T17:56:01,694 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-03-15T17:56:01,694 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-03-15T17:56:01,694 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-03-15T17:56:01,694 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-03-15T17:56:01,694 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-03-15T17:56:01,694 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-03-15T17:56:01,694 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-03-15T17:56:01,694 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-03-15T17:56:01,694 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-03-15T17:56:01,694 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-03-15T17:56:01,694 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_loader.py", line 143, in load
+2024-03-15T17:56:01,694 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-03-15T17:56:01,695 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/vision_handler.py", line 25, in initialize
+2024-03-15T17:56:01,695 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super().initialize(context)
+2024-03-15T17:56:01,695 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 170, in initialize
+2024-03-15T17:56:01,695 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.model = self._load_pickled_model(
+2024-03-15T17:56:01,695 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 311, in _load_pickled_model
+2024-03-15T17:56:01,695 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     model = model_class()
+2024-03-15T17:56:01,695 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/tmp/models/edd7f3e2a1bd48608d8aef845c32ddda/model.py", line 12, in __init__
+2024-03-15T17:56:01,695 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super(Net, self).__init__()
+2024-03-15T17:56:01,695 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - TypeError: __init__() missing 1 required positional argument: 'backbone'
+2024-03-15T17:56:23,461 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=13495
+2024-03-15T17:56:23,461 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-03-15T17:56:23,467 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Successfully loaded /home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2024-03-15T17:56:23,467 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - [PID]13495
+2024-03-15T17:56:23,467 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch worker started.
+2024-03-15T17:56:23,467 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Python runtime: 3.8.10
+2024-03-15T17:56:23,469 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-03-15T17:56:23,477 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - model_name: keypoint_rcnn, batchSize: 1
+2024-03-15T17:56:24,612 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Enabled tensor cores
+2024-03-15T17:56:24,612 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-03-15T17:56:24,613 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-03-15T17:56:25,116 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_loader.py", line 143, in load
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/vision_handler.py", line 25, in initialize
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super().initialize(context)
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 170, in initialize
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.model = self._load_pickled_model(
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 311, in _load_pickled_model
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     model = model_class()
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/tmp/models/edd7f3e2a1bd48608d8aef845c32ddda/model.py", line 12, in __init__
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super(Net, self).__init__()
+2024-03-15T17:56:25,120 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - TypeError: __init__() missing 1 required positional argument: 'backbone'
+2024-03-15T17:56:59,884 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=13623
+2024-03-15T17:56:59,884 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-03-15T17:56:59,889 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Successfully loaded /home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2024-03-15T17:56:59,890 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - [PID]13623
+2024-03-15T17:56:59,890 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch worker started.
+2024-03-15T17:56:59,890 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Python runtime: 3.8.10
+2024-03-15T17:56:59,891 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-03-15T17:56:59,899 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - model_name: keypoint_rcnn, batchSize: 1
+2024-03-15T17:57:01,059 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Enabled tensor cores
+2024-03-15T17:57:01,059 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-03-15T17:57:01,059 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_loader.py", line 143, in load
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/vision_handler.py", line 25, in initialize
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super().initialize(context)
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 170, in initialize
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.model = self._load_pickled_model(
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 311, in _load_pickled_model
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     model = model_class()
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/tmp/models/edd7f3e2a1bd48608d8aef845c32ddda/model.py", line 12, in __init__
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super(Net, self).__init__()
+2024-03-15T17:57:01,562 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - TypeError: __init__() missing 1 required positional argument: 'backbone'
+2024-03-15T17:57:57,372 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=13735
+2024-03-15T17:57:57,372 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-03-15T17:57:57,379 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Successfully loaded /home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2024-03-15T17:57:57,380 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - [PID]13735
+2024-03-15T17:57:57,380 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch worker started.
+2024-03-15T17:57:57,380 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Python runtime: 3.8.10
+2024-03-15T17:57:57,381 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-03-15T17:57:57,389 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - model_name: keypoint_rcnn, batchSize: 1
+2024-03-15T17:57:58,637 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Enabled tensor cores
+2024-03-15T17:57:58,637 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-03-15T17:57:58,637 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_loader.py", line 143, in load
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/vision_handler.py", line 25, in initialize
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super().initialize(context)
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 170, in initialize
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.model = self._load_pickled_model(
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 311, in _load_pickled_model
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     model = model_class()
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/tmp/models/edd7f3e2a1bd48608d8aef845c32ddda/model.py", line 12, in __init__
+2024-03-15T17:57:59,217 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super(Net, self).__init__()
+2024-03-15T17:57:59,218 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - TypeError: __init__() missing 1 required positional argument: 'backbone'
+2024-03-15T17:59:28,997 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=13890
+2024-03-15T17:59:28,997 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-03-15T17:59:29,003 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Successfully loaded /home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2024-03-15T17:59:29,003 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - [PID]13890
+2024-03-15T17:59:29,003 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch worker started.
+2024-03-15T17:59:29,003 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Python runtime: 3.8.10
+2024-03-15T17:59:29,004 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-03-15T17:59:29,012 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - model_name: keypoint_rcnn, batchSize: 1
+2024-03-15T17:59:30,137 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Enabled tensor cores
+2024-03-15T17:59:30,137 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-03-15T17:59:30,137 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-03-15T17:59:30,635 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-03-15T17:59:30,635 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-03-15T17:59:30,635 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-03-15T17:59:30,635 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-03-15T17:59:30,635 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-03-15T17:59:30,635 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-03-15T17:59:30,635 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-03-15T17:59:30,635 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-03-15T17:59:30,635 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-03-15T17:59:30,635 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-03-15T17:59:30,636 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_loader.py", line 143, in load
+2024-03-15T17:59:30,636 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-03-15T17:59:30,636 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/vision_handler.py", line 25, in initialize
+2024-03-15T17:59:30,636 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super().initialize(context)
+2024-03-15T17:59:30,636 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 170, in initialize
+2024-03-15T17:59:30,636 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.model = self._load_pickled_model(
+2024-03-15T17:59:30,636 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 311, in _load_pickled_model
+2024-03-15T17:59:30,636 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     model = model_class()
+2024-03-15T17:59:30,636 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/tmp/models/edd7f3e2a1bd48608d8aef845c32ddda/model.py", line 12, in __init__
+2024-03-15T17:59:30,636 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super(Net, self).__init__()
+2024-03-15T17:59:30,636 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - TypeError: __init__() missing 1 required positional argument: 'backbone'
+2024-03-15T18:01:55,421 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=14020
+2024-03-15T18:01:55,422 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2024-03-15T18:01:55,427 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Successfully loaded /home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/configs/metrics.yaml.
+2024-03-15T18:01:55,428 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - [PID]14020
+2024-03-15T18:01:55,428 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch worker started.
+2024-03-15T18:01:55,428 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Python runtime: 3.8.10
+2024-03-15T18:01:55,429 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2024-03-15T18:01:55,446 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - model_name: keypoint_rcnn, batchSize: 1
+2024-03-15T18:01:56,589 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Enabled tensor cores
+2024-03-15T18:01:56,589 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2024-03-15T18:01:56,589 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2024-03-15T18:01:57,093 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Backend worker process died.
+2024-03-15T18:01:57,093 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2024-03-15T18:01:57,093 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 263, in <module>
+2024-03-15T18:01:57,093 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     worker.run_server()
+2024-03-15T18:01:57,093 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 231, in run_server
+2024-03-15T18:01:57,093 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2024-03-15T18:01:57,093 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 194, in handle_connection
+2024-03-15T18:01:57,093 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service, result, code = self.load_model(msg)
+2024-03-15T18:01:57,094 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_service_worker.py", line 131, in load_model
+2024-03-15T18:01:57,094 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2024-03-15T18:01:57,094 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/model_loader.py", line 143, in load
+2024-03-15T18:01:57,094 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2024-03-15T18:01:57,094 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/vision_handler.py", line 25, in initialize
+2024-03-15T18:01:57,094 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super().initialize(context)
+2024-03-15T18:01:57,094 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 170, in initialize
+2024-03-15T18:01:57,094 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     self.model = self._load_pickled_model(
+2024-03-15T18:01:57,094 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/home/zareef/Code/756-final-proj/env1/lib/python3.8/site-packages/ts/torch_handler/base_handler.py", line 311, in _load_pickled_model
+2024-03-15T18:01:57,094 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     model = model_class()
+2024-03-15T18:01:57,094 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -   File "/tmp/models/edd7f3e2a1bd48608d8aef845c32ddda/model.py", line 12, in __init__
+2024-03-15T18:01:57,094 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG -     super(Net, self).__init__()
+2024-03-15T18:01:57,094 [INFO ] W-9000-keypoint_rcnn_1.0-stdout MODEL_LOG - TypeError: __init__() missing 1 required positional argument: 'backbone'
