@@ -1,4 +1,5 @@
-env1/
+stream_lit_env/
 serverless/*.json
+serverless/settings.py
 *.mar
 *.pt
