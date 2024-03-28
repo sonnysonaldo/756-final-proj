@@ -1,6 +1,6 @@
 .PHONY: run run-container gcloud-deploy
 
-APP_NAME ?= food-vision
+APP_NAME ?= pose-estimation
 
 run:
 	@streamlit run app.py --server.port=8080 --server.address=0.0.0.0

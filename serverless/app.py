@@ -9,11 +9,11 @@ from predict import predict_endpoint
 
 
 # Setup environment credentials (you'll need to change these)
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="" # change for your GCP key
-PROJECT="" # change for your GCP project
-PROJECT_NUMBER="" # project number can be found on the main console page
-REGION="" # change for your GCP region (where your model is hosted)
-VERTEX_ENDPOINT_ID="" # Vertex AI endpoint ID, can be found in Deploy and Test in Vertex AI.
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "cmpt756-final-project-pose-742126ca93fa.json" # change for your GCP key
+PROJECT="cmpt756-final-project-pose" # change for your GCP project
+PROJECT_NUMBER="669397337286" # project number can be found on the main console page
+REGION = "us-central1" # change for your GCP region (where your model is hosted)
+VERTEX_ENDPOINT_ID = "8806795668392771584" # Vertex AI endpoint ID, can be found in Deploy and Test in Vertex AI.
 
 @st.cache # cache the function so predictions aren't always redone (Streamlit refreshes every click)
 def make_prediction(img_bytes):
