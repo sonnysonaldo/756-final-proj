@@ -2,6 +2,7 @@
 import os
 import json
 import requests
+import time
 from io import BytesIO
 import streamlit as st
 from PIL import Image
@@ -18,7 +19,7 @@ VERTEX_ENDPOINT_ID = "8806795668392771584" # Vertex AI endpoint ID, can be found
 @st.cache # cache the function so predictions aren't always redone (Streamlit refreshes every click)
 def make_prediction(img_bytes):
     """
-    Takes an image and uses model (a trained TensorFlow model) to make a
+    Takes an image and uses a model from Vertex AI to make a
     prediction.
 
     Returns:
@@ -57,8 +58,10 @@ def streamlit_app():
 
     # And if they did...
     if st.session_state.pred_button:
+        start = time.time()
         st.session_state.image, st.session_state.preds = make_prediction(st.session_state.uploaded_image)
-        st.write(f"Prediction: {st.session_state.preds}")
+        end = time.time()
+        st.write(f"Prediction: {st.session_state.preds}, Time taken (Vertex AI Call): {end-start}")
 
 # TODO: code could be cleaned up to work with a main() function...
 if __name__ == "__main__":
