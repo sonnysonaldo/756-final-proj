@@ -1,4 +1,4 @@
-# CMPT756 Project Progress Report: Containerized or Serverless Learning
+# CMPT756 Project: Containerized or Serverless Learning
 
 **Authors:** Gouttham Nambirajan, Zareef Raiyan Safdar, Midhun Jisha Manoj, Ashwin Abraham John, Wenhe Wang
 
@@ -29,3 +29,18 @@ It is similar to serverless; however, it requires some changes:
 2. **Measure response time** to evaluate latency differences.
 3. **Potential extra experiment:** Compare performance using GPU-based Vertex AI vs GPU VM instance with Google Kubernetes Engine.
 
+
+# CMPT 756: Distributed & Cloud Systems
+
+**Instructor:** Ouldooz Baghban Karimi @ SFU, Spring 2024
+
+**Teaching Assistants:**
+- Owais Ahmed Hetavkar
+- Darshaun Kandasamy Govindhraj
+- Pranjal Verma
+
+## Course Schedule
+
+Below is the tentative schedule for the course:
+
+![CMPT 756 Course Schedule](course.png)
