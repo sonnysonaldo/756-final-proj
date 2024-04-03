@@ -1,0 +1,8 @@
+pillow==9.5.0
+requests
+streamlit
+gevent
+torch
+tensorflow
+torchvision
+protobuf==3.20.*
