@@ -3,3 +3,5 @@ serverless/*.json
 serverless/settings.py
 *.mar
 *.pt
+*.jpeg
+measurements/
