@@ -41,6 +41,4 @@ It is similar to serverless; however, it requires some changes:
 
 ## Course Schedule
 
-Below is the tentative schedule for the course:
-
 ![CMPT 756 Course Schedule](course.png)
