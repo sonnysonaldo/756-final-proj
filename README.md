@@ -8,20 +8,11 @@ We are conducting a project to compare serverless and serverful (containerized) 
 
 ### Serverless Approach
 
-- **Acquire a pre-trained PyTorch model** for pose estimation to get fall detection.
-- **Convert the model** to a GCP-compatible format using torch-serve.
-- **Upload the model** to Google Cloud Storage and set up the Vertex AI model endpoint.
-- **Develop a StreamLit-based Python App** to send API calls to the Vertex AI model endpoint.
-- **Deploy the StreamLit app** to Google App Engine and send prediction requests through it.
+![Serverless System Design](serverless_system_design.png)
 
 ### Serverful Approach
 
-It is similar to serverless; however, it requires some changes:
-
-- **Modify the StreamLit-based Python App** to run the PyTorch Model directly.
-- **Set up Docker** on a VM instance using Google Compute Engine.
-- **Build a Docker image** containing the StreamLit app and PyTorch model.
-- **Create a Kubernetes deployment** to manage the cluster and host the backend app.
+![Serverful System Design](serverful_system_design.png)
 
 ## Evaluation Plan
 
